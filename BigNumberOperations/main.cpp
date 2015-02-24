@@ -165,14 +165,26 @@ public: // public area
     }
     
     BigNumber operator - (BigNumber b) { // subtracting big numbers provided that A > B > 0
-        BigNumber c;
-        c.sign=0;
-        int t = 0;
+        BigNumber c; // declaring the result that is going to be returned
+        c.sign=0; // initial sign of result is positive
+        int t = 0; // initial transport variable set to 0
+        BigNumber zero = BigNumber(0); // initializing 0 as a big number
+        if(*this<b) { // if a < b
+            c.sign = 1; // result becomes negative
+            swap(*this, b); // swap their values to do b-a instead
+        }
+        if(b < zero && *this > zero) { // if a > 0 and b < 0
+            b=b.absolute(); // change value of b to it's absolute
+            return *this+b; // return the sum of a+b, knowing a-(-b)==a+b
+        }
         unsigned long long n = max(num.size(),b.num.size());
         for(unsigned long long i = 0; i < n; i++ ) {
-            unsigned short newDigit = (verify(i)-t<b.verify(i))*10+verify(i)-t-b.verify(i);
+            unsigned short newDigit = (verify(i)-t<b.verify(i))*10+verify(i)-t-b.verify(i); // computing new digit we are going to push to result
             t=verify(i)-t<b.verify(i);
             c.num.push_back(newDigit);
+        }
+        while (c.num[--n]==0) {
+            c.num.pop_back();
         }
         return c;
     }
@@ -193,9 +205,9 @@ public: // public area
 int main()
 {
     BigNumber a,b;
-    a=BigNumber(1232);
+    a=BigNumber(233);
     a.write();
-    b = BigNumber("1");
+    b = BigNumber("1232");
     b.write();
     (a-b).write();
     return 0;
