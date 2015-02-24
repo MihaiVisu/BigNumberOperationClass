@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D26E3D2F-905E-4E4A-A019-410B1E59F5F1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BigNumberOperations</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D565DC350F70D8378E0867D35FE5F91F46A6742D</key>
+		<string>https://github.com/MihaiVisu/C-projects.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DataStructures/BigNumberOperations/BigNumberOperations.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D565DC350F70D8378E0867D35FE5F91F46A6742D</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MihaiVisu/C-projects.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D565DC350F70D8378E0867D35FE5F91F46A6742D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D565DC350F70D8378E0867D35FE5F91F46A6742D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>C++</string>
+		</dict>
+	</array>
+</dict>
+</plist>
